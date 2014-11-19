@@ -1,0 +1,9 @@
+name: import_resolver
+version: 1.0.0
+author: Zdenko Vrabel <vrabel.zdenko@gmail.com>
+description: This small library helps you with HTML link imports and it is response for non-working LinkElement.import which is experimental and not supported in all browsers yet.
+homepage: http://www.urbantower.org
+environment:
+  sdk: ">=1.6.0"
+dependencies:
+  browser: '>=0.10.0 <0.11.0'
