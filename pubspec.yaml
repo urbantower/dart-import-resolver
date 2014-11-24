@@ -1,5 +1,5 @@
 name: import_resolver
-version: 1.0.0
+version: 1.0.1
 author: Zdenko Vrabel <vrabel.zdenko@gmail.com>
 description: This small library helps you with HTML link imports and it is response for non-working LinkElement.import which is experimental and not supported in all browsers yet.
 homepage: http://github.com/urbantower/dart-import-resolver
