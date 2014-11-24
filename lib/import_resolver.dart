@@ -38,8 +38,10 @@ class ImportResolver {
   /**
    * Constructor
    */
-  ImportResolver() {
-    validator = new NodeValidatorBuilder();
+  ImportResolver(this.validator) {
+    if (validator == null) {
+      validator = new NodeValidatorBuilder();
+    }
     validator.allowTextElements();
     validator.allowTemplating();    
     validator.allowHtml5();
@@ -50,7 +52,10 @@ class ImportResolver {
   /**
    * loading all imports and replace them
    */
-  static Future<ImportResolver> resolve() => new ImportResolver()._loadImports(document.querySelectorAll("link[rel=import]"));
+  static Future<ImportResolver> resolve({NodeValidatorBuilder nodeValidator: null}) {
+    return new ImportResolver(nodeValidator)._loadImports(document.querySelectorAll("link[rel=import]"));
+  }
+    
   
   
   /**
