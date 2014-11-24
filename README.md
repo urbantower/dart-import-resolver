@@ -8,7 +8,7 @@ or was experimental. This is temporary solution and  will not be needed in the f
 Add import_resolver to your project's pubspec.yaml file.
 
 	dependencies:
-  		urbantower.import_resolver: '>=1.0.0<1.1.0'  		   
+  		import_resolver: '>=1.0.0<1.1.0'  		   
   		
 ## How to use
 
